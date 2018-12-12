@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialoginformation_bg">
+
+    <TextView
+        android:id="@+id/dialog_informationss_titletv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="温馨提示"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/dialog_informationss_contextet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/dialog_informationss_titletv"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/search_background"
+        android:gravity="center"
+        android:hint="输入内容"
+        android:maxLength="10"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:textColor="#696969"
+        android:textColorHint="#696969"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/dialog_informationss_contextet"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <TextView
+            android:id="@+id/dialog_informationss_canceltv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="取消"
+            android:textColor="#696969"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/dialog_informationss_surelv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="确定"
+            android:textColor="#339BFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

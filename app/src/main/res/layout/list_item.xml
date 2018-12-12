@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:id="@+id/id_treenode_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/tree_econpand" />
+
+    <CheckBox
+        android:id="@+id/id_treeNode_check"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:visibility="visible"
+        android:layout_toRightOf="@id/id_treenode_icon"
+        android:background="@drawable/check_box_bg"
+        android:button="@null"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/id_treenode_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/id_treeNode_check"
+        android:text="备件或人工设备备件或人工设备备件或人工设备备件或人工设备备件或人工设备备件或人工设备"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#696969"
+        android:textSize="14sp" />
+
+</RelativeLayout>
